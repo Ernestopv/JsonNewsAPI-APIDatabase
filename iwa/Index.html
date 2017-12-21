@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="Mystyle.css">
+<!--Ernesto Prado villalobos CCT ID: 2015268 -->
+
+</head>
+<body>
+
+<!-- Status bar overlay for fullscreen mode-->
+
+<!-- Panels overlay-->
+<div class="panel-overlay"></div>
+<!-- Left panel with reveal effect-->
+
+<!-- Right panel with cover effect-->
+<div class="panel panel-right panel-cover">
+    <!- Displaying Jason Source -->
+    <div class="content-block" id="jason"></div>
+    <div class="content-block" id="jason2"></div>
+    <div class="content-block" id="jason3"></div>
+    <!-- Sports Jason -->
+    <div class="content-block" id="jason4"></div>
+    <div class="content-block" id="jason5"></div>
+    <div class="content-block" id="jason6"></div>
+    <!-- finance Jason -->
+    <div class="content-block" id="jason7"></div>
+    <div class="content-block" id="jason8"></div>
+
+    <!-- Bussines Jason -->
+    <div class="content-block" id="jason9"></div>
+
+</div>
+
+
+<!-- Views, and they are tabs-->
+<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+<div class="views tabs toolbar-through">
+    <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+    <div id="view-1" class="view view-main tab active">
+        <!-- Pages-->
+        <div class="pages">
+            <!-- Page, data-page contains page name-->
+            <div data-page="index-1" class="page">
+                <!-- Scrollable page content-->
+                <div class="page-content">
+                    <div class="content-block-title"><h1 id="center">T-News</h1></div>
+                    <div class="content-block">
+                        <!-- Welcoming Area-->
+                        <h3 id="center2">This is a special site to read News, The true is always ahead ...... </h3>
+                        <h3 id="calisto"></h3>
+                        <h3 id="status" class="acomodo"></h3>
+                        <!-- Buttons Area -->
+
+                        <div class="acomodo" id="facebook"> <div  class="fb-login-button"  onlogin ="checkLoginState();"  data-width="200" data-max-rows="2" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false" id="center3"></div></div>
+                        <div id="newsbutton" ><a  href="#view-2" class="button2 titulos button button-big button-fill tabbar-label tab-link toolbar-inner tab-link " onclick="changeColor();">News!</a></div>
+                       <br>
+                        <div id="goslin"> <a  href="#view-3" class=" button2 titulos button button-big  button-fill tabbar-label tab-link toolbar-inner tab-link  " onclick="changeColor2();">Top Ten(Server Goslin)</a></div>
+                       <br>
+                        <div id="eprado"> <a  href="#view-4" class=" button2 titulos button button-big   button-fill tabbar-label tab-link toolbar-inner tab-link " onclick="changeColor3();">Upload News Into Eprado-Server</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Second view (for second wrap)-->
+    <div id="view-2" class="view tab">
+    <!-- We can make with view with navigation, let's add Top Navbar-->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="center sliding"><h1 class="titulos">T-News</h1></div>
+        </div>
+    </div>
+    <div class="pages navbar-through">
+        <div data-page="index-1" class="page" >
+            <div class="page-content">
+                <div class="content-block acomodo">
+                    <div> <h1>Content </h1></div>
+                </div>
+                <div  class="list-block ">
+                    <ul ><!--CONTENT AREA  -->
+
+                        <li ><a href="news.html" class="item-link button2"  onclick="breakingnewV();" >
+                            <div  class="item-content ">
+                                <div class="item-inner ">
+                                    <div  class="item-title imageAcomodo"><h1 class="titulos ">News</h1></div>
+                                    <!--NEWS LINK  -->
+                                </div>
+                            </div></a></li>
+
+
+                        <li ><a href="news.html" class="item-link button2"  onclick="sportsnewsV();" >
+                            <div  class="item-content ">
+                                <div class="item-inner ">
+                                    <div  class="item-title imageAcomodo"><h1 class="titulos ">Sports</h1></div>
+                                    <!--SPORTS  LINK  -->
+                                </div>
+                            </div></a></li>
+
+
+                        <li ><a href="news.html" class="item-link button2"  onclick="financenewsV();" >
+                            <div  class="item-content ">
+                                <div class="item-inner ">
+                                    <div  class="item-title imageAcomodo"><h1 class="titulos ">Finance</h1></div>
+                                    <!--FINANCE LINK  -->
+                                </div>
+                            </div></a></li>
+
+                        <li ><a href="news.html" class="item-link button2"  onclick="bussinesnewsV();" >
+                            <div  class="item-content ">
+                                <div class="item-inner ">
+                                    <div  class="item-title imageAcomodo"><h1 class="titulos ">Bussines</h1></div>
+                                    <!--BUSSINES  LINK  -->
+                                </div>
+                            </div></a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <!-- 3 view -->
+
+
+
+    <!-- Second view (for second wrap)-->
+
+        <!-- We can make with view with navigation, let's add Top Navbar-->
+        <div id="view-3" class="view tab">
+            <div class="pages navbar-fixed">
+                <div data-page="index-3" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="center"><h1 class="titulos">Server Goslin</h1></div>
+                        </div>
+                    </div> <!-- THIS IS GOING TO DISPLAY KYLE'S NEWS -->
+
+
+                <div class="page-content">
+                    <div class="content-block">
+
+                        <h1 class="acomodo">Top Ten News </h1>
+                        <div class="content-block-inner">
+                            <p id="goslinNews" class="marge"></p>
+                        </div>
+                        <h3>Current Authors</h3>
+                        <p id="goslinAuthors" ></p>
+                    </div>
+                    <div class="list-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 3  end view -->
+
+    <!-- 4  end view -->
+
+    <div id="view-4" class="view tab">
+        <div class="pages navbar-fixed">
+            <div data-page="index-4" class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center"><h1 class="titulos">Server E</h1></div>
+                    </div>
+                </div>
+
+
+                <div class="page-content">
+                    <div class="content-block">
+                        <h1>Please insert your relevant New</h1>
+                        <form id="my-form" class="list-block">
+                            <ul>
+                                <li>   <!-- AREA TO SUBMIT MY NEWS   -->
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <form name="contact-form">
+                                                <input   type="text" id="noticia" style="font-family: Consolas" name="name" placeholder="Please Insert Title"  onfocus="this.value=''" >
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </form>
+                        <br>
+                        <br>
+                        <div class="content-block">
+                            <a href="#" class=" button2 titulos button button-big  form-to-data active "  onclick="sending();" >Upload</a>
+                        </div>
+
+
+                    </div>
+                    <div class="list-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5  end view -->
+
+    <div id="view-5" class="view tab">
+        <div class="pages navbar-fixed">
+            <div data-page="index-5" class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center"><h1 class="titulos" >Server E</h1></div>
+                    </div>
+                </div>
+
+
+                <div class="page-content">
+                    <div class="content-block"> <!-- AREA TO SEE NEWS UPLOADED -->
+                        <h1 class="acomodo">News Uploaded</h1>
+                        <div  class="content-block-inner"><p id="meServer" class="acomodo"></p> </div>
+                        <p id="myNews"></p>
+
+                    </div>
+                    <div class="list-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Bottom Tabbar--> <!--INFORMATION , NEWS , KYLE'S DATABASE, UPLOAD NEWS TO MY SERVER, SEE NEWS FROM MY SERVER , ICONS ARE DISPLAYED IN THE BOTTOM -->
+
+    <div id="body" class="toolbar tabbar tabbar-labels">
+        <div   class="toolbar-inner"><a href="#view-1" class="tab-link active"> <i class="icon tabbar-demo-icon-1"></i><span class="tabbar-label">Information</span></a>
+            <a id="hide1" href="#view-2" class="tab-link"><i  class="f7-icons">world_fill</i><span  class="tabbar-label">News</span></a>
+            <a  id="hide2"  href="#view-3" class="tab-link" onclick="serverGoslin(); serverGoslin2();"  > <i class="f7-icons">cloud_fill</i><span class="tabbar-label">Server Goslin </span></a>
+            <a  id="hide3"  href="#view-4" class="tab-link"> <i class="f7-icons">cloud_upload</i><span class="tabbar-label">Upload</span></a>
+            <a  id="hide4"  href="#view-5" class="tab-link" onclick="myServerE();"> <i class="f7-icons">cloud_download</i><span class="tabbar-label">ServerE</span></a>
+                <div id="logoutButton" onclick="logingOut();" onload="logingOut();" ><a href="#view-1"   class="tab-link"><i class="f7-icons">logout</i><span class="tabbar-label" >Log out</span></a></div>
+    </div>
+
+</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+<script type="text/javascript"  src="forma.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<!--THIS IS FOR FACEBOOK  -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=129159751078481';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

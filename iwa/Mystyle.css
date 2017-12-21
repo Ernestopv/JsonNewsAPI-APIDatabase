@@ -1,0 +1,180 @@
+/* this page is for style */
+/*Ernesto Prado villalobos  CCT ID= 2015268*/
+
+/*FRAMEWORK 7 ICONS */
+@font-face {
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("font/Framework7Icons-Regular.eot");
+    src: local('Framework7 Icons'),
+    local('Framework7Icons-Regular'),
+    url("font/Framework7Icons-Regular.woff2") format("woff2"),
+    url("font/Framework7Icons-Regular.woff") format("woff"),
+    url("font/Framework7Icons-Regular.ttf") format("truetype");
+}
+
+.f7-icons, .framework7-icons {
+    font-family: 'Framework7 Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+}
+/*ID TO CENTER CATEGORY BUTTONS */
+#center {
+
+    text-align: center;
+    font-family: Consolas;
+    font-size: 38px;
+    text-shadow: 2px 2px 4px #000000;
+    color : dimgrey;
+
+}
+
+/*CLASS TO CENTER CATEGORY BUTTONS */
+.acomodo {
+
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+
+}
+
+/*CLASS TO FILLED BLUE IN SOME TITLES  */
+.rellenar {
+
+   color : blue;
+}
+#center2{
+    text-align: center;
+}
+
+#center3{
+    text-align: center;
+}
+
+#center4{
+    text-align: center;
+}
+
+.di{
+
+    display: none;
+}
+
+.imageAcomodo{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}
+
+/*FORMAT IN SOME TEXT */
+h1 {
+    font-family: Consolas;
+    color: #1E90FF;
+}
+
+p{
+    font-family: Consolas;
+    color: black;
+
+}
+
+a{
+    font-family: Consolas;
+    font-size: 9px;
+}
+
+h3{
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+
+.titulos{
+
+    font-size: 35px;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Consolas;
+    color : dimgrey;
+}
+/*FORMAT IN BUTTONS FROM INTRODUCTION */
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2:hover {
+    background-color: #1E90FF;
+    color: white;
+}
+
+.backFormat{
+    font-family: Consolas;
+
+}
+
+/*FORMAT IN BUTTONS NEWS SOME EFFECT */
+.style_prevu_kit:hover
+{
+    box-shadow: 0px 0px 50px #000000;
+    z-index: 2;
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(0.8);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(0.5);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(0.5);
+    transition: all 100ms ease-in;
+    transform: scale(0.8);
+}
+
+
+
+img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+/* Shaking an Image  */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.marge{
+
+
+
+    margin-left: 20px;
+}
+
+/* text for input */
+
